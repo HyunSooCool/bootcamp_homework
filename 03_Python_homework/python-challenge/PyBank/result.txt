@@ -1,0 +1,6 @@
+Financial Analysis
+-----------------------------------
+Total months : 86
+Average Change : Feb-2012  $-2315.1176470588234
+Greatest Increase in Profits : Feb-2012   ($1926159)
+Greatest Decrease in Profits : Sep-2013  ($-2196167)
