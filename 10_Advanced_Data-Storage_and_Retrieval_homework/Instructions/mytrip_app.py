@@ -40,7 +40,6 @@ app = Flask(__name__)
 def home():
     """Connecting to Homepage"""
     return(
-
          f"Available Routes:<br/>"
          f"JSON list Precipitation: "
          f"/api/v1.0/precipitation<br/>"
@@ -49,9 +48,9 @@ def home():
          f"JSON list Tempurature Observations : "
          f"/api/v1.0/tobs<br/>"
          f"It returns min/avg/max tempurature when you put Start date : "
-         f"/api/v1.0/<start><br/>"
+         f"/api/v1.0/start_date <-- put date! <br/>date format : yyyy-mm-dd<br/>"
          f"It returns min/avg/max tempurature between start date and end date : "
-         f"/api/v1.0/<start>/<end>"
+         f"/api/v1.0/start_date/end_date put date! <br/>date format : yyyy-mm-dd<br/>"
          )
 
 @app.route("/api/v1.0/precipitation")
