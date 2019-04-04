@@ -15,13 +15,14 @@ from flask import Flask, jsonify
 # Database Setup
 #################################################
 
-engine = create_engine("sqlite:///hawaii.sqlite")
+engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
 Base = automap_base()
 
 Base.prepare(engine, reflect=True)
 
-Passenger = Base.classes.passenger
+Measurement = Base.classes.measurement
+Station = Base.classes.station
 
 session = Session(engine)
 
@@ -41,15 +42,15 @@ def home():
     return(
 
          f"Available Routes:<br/>"
-         f"JSON list Precipitation:"
+         f"JSON list Precipitation: "
          f"/api/v1.0/precipitation<br/>"
-         f"JSON list Stations"
+         f"JSON list Stations : "
          f"/api/v1.0/stations<br/>"
-         f"JSON list Tempurature Observations:"
+         f"JSON list Tempurature Observations : "
          f"/api/v1.0/tobs<br/>"
-         f"It returns min/avg/max tempurature when you put Start date"
+         f"It returns min/avg/max tempurature when you put Start date : "
          f"/api/v1.0/<start><br/>"
-         f"It returns min/avg/max tempurature between start date and end date"
+         f"It returns min/avg/max tempurature between start date and end date : "
          f"/api/v1.0/<start>/<end>"
          )
 
