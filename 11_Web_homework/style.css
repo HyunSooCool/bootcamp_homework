@@ -61,8 +61,22 @@ body {
   font-size: 2.0rem;
 }
 
+.container-fluid {
+  padding-right: 0%;
+  padding-left: 0%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content{
+  padding-right: 95px;
+  padding-left: 95px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 
+/* For mobile phones: */
 @media (max-width: 480px) {
   .navbar li {
     padding: 10px;
@@ -79,7 +93,7 @@ body {
   }
 }
 
-
+  /* For desktop: */
 @media only screen and (max-width: 768px) {
 
   [class*="col-"] {
